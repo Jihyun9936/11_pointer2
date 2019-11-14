@@ -42,7 +42,7 @@ int main(){
 	return 0;
 }*/
 
-/*Lab04*/
+/*Lab04
 int main(){
 	int i = 100;
 	int *p = &i;
@@ -53,6 +53,21 @@ int main(){
 	
 	**q = 300;
 	printf("i = %d, *p = %d, **q = %d\n", i, *p, **q);
+	
+	return 0;
+}*/
+
+/*Lab05*/
+char *proverb = "All that glisters is not gold.";
+
+void setPointer(char **q){
+	*q = proverb;
+}
+
+int main(){
+	char *p = "zzz";
+	setPointer(&p);
+	printf("%s\n", p);
 	
 	return 0;
 }
