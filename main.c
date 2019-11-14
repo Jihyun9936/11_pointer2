@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
 	return 0;
 }*/
 
-/*Lab03*/
+/*Lab03
 int main(){
 	char buffer[8];
 	double *pd;
@@ -38,6 +38,21 @@ int main(){
 	*pi = 123;
 	*(pi+1) = 456;
 	printf("%d %d\n", *(int*)buffer, *((int*)buffer+1));
+	
+	return 0;
+}*/
+
+/*Lab04*/
+int main(){
+	int i = 100;
+	int *p = &i;
+	int **q = &p;
+	
+	*p = 200;
+	printf("i = %d, *p = %d, **q = %d\n", i, *p, **q);
+	
+	**q = 300;
+	printf("i = %d, *p = %d, **q = %d\n", i, *p, **q);
 	
 	return 0;
 }
